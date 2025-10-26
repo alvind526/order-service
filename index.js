@@ -2,8 +2,9 @@ import express from "express";
 import axios from "axios";
 
 const app = express();
-const USER_SERVICE_URL = "https://order-service-w452.onrender.com/";
-const PRODUCT_SERVICE_URL = "https://product-service.onrender.com";
+
+const USER_SERVICE_URL = "https://user-service-76d3.onrender.com";
+const PRODUCT_SERVICE_URL = "https://product-service-5bp2.onrender.com";
 
 app.get("/api/orders/:id", async (req, res) => {
   const { id } = req.params;
